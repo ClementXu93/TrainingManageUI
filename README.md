@@ -26,3 +26,5 @@ npm run e2e
 # run all tests
 npm test
 ```
+
+this project is for testing. let's enjoy it.
