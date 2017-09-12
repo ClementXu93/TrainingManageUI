@@ -41,6 +41,21 @@ export default {
             {
               index: '绩效薪资管理',
               title: '绩效薪资管理'
+            },
+            {
+              index: '',
+              title: '值班管理'
+            }
+          ]
+        },
+        {
+          icon: 'el-icon-setting',
+          index: '3',
+          title: '系统管理',
+          subs: [
+            {
+              index: 'addstudent',
+              title: '添加学生'
             }
           ]
         }

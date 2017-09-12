@@ -12,6 +12,15 @@ export default new Router({
     {
       path: '/home',
       component: resolve => require(['../components/common/Home.vue'], resolve),
+      beforeEnter: (to, from, next) => {
+        console.log(111)
+        const a = 1
+        if (a === 1) {
+          next()
+        } else {
+          next(false)
+        }
+      },
       children: [
         {
           path: '/',
@@ -24,6 +33,10 @@ export default new Router({
         {
           path: '/绩效薪资管理',
           component: resolve => require(['../components/page/绩效薪资管理.vue'], resolve)
+        },
+        {
+          path: '/addstudent',
+          component: resolve => require(['../components/page/addstudent.vue'], resolve)
         }
       ]
     },

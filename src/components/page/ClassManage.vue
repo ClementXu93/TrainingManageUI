@@ -51,6 +51,35 @@
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      select_cate: '',
+      select_schoolroll: '',
+      select_studentname: '',
+      select_dora: '',
+      cur_page: 1
+    }
+  },
+  computed: {
+    data () {}
+  },
+  methods: {
+    handleCurrentChange (val) {
+      this.cur_page = val
+    },
+    handleSelectionChange (val) {},
+    delAll () {},
+    search () {},
+    handleEdit (index, row) {},
+    handleDelete (index, row) {},
+    formatter (row, column) {}
+  }
+}
+</script>
+
+
 <style scoped>
 .handle-box{
   margin-bottom: 20px;

@@ -19,6 +19,7 @@
 </template>
 
 <script>
+  // import axios from 'axios'
   export default {
     data () {
       return {
@@ -43,6 +44,10 @@
           if (valid) {
             alert('submit!')
             localStorage.setItem('ms_username', this.ruleForm.userid)
+            // axios.get('https://www.baidu.com').then((res) => {
+            //   console.log(res)
+            //   alert(res)
+            // })
             this.$router.push('/home')
           } else {
             console.log('error submit!!')
