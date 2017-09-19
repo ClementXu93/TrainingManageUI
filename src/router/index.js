@@ -13,7 +13,7 @@ export default new Router({
       path: '/home',
       component: resolve => require(['../components/common/Home.vue'], resolve),
       beforeEnter: (to, from, next) => {
-        console.log(111)
+        // TODO session check
         const a = 1
         if (a === 1) {
           next()
